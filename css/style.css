@@ -4,20 +4,25 @@ html, body {
     margin: 0;
 }
 
+.main {
+    padding-bottom: 100px;
+}
+
 .navbar-light .navbar-brand {
+    color: #fff;
     font-size: 30px;
     font-weight: bold;
-    color: slateblue;
 }
 
 .navbar-light .navbar-nav .nav-link {
+    color: #fff;
     font-size: 25px;
-    color: slateblue;
+    text-align: right;
 }
 
 .cadre {
     width: 95%;
-    margin: 50px auto;
+    margin: 70px auto;
     padding: 10px;
     border: 2px solid #333;
     border-radius: 25px;
@@ -70,15 +75,16 @@ html, body {
     font-size: 15px;
     font-weight: bold;
     padding: 10px 0;
-    background-color: steelblue;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    margin-top: 35px;
 }
 
 .footer .text {
     text-align: center;
+    color: #fff;
+    padding: 0 auto;
 }
 
 @media (max-width: 768px) {
