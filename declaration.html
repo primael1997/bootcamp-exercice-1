@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Naissances</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/declaration.html">Déclaration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/prix.html">Prix</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="card-title">Formulaire de déclaration de naissance</h5>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <fieldset class="border rounded p-3">
+                            <legend class="float-none w-auto px-2">Naissance :</legend>
+                            <div class="row mb-3">
+                                <label for="firstName" class="col-sm-2 col-form-label col-form-label-sm">Prénoms : <b
+                                        class="text-danger">*</b></label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control form-control-sm" id="firstName" name="firstName"
+                                        placeholder="Le (s) prénoms de l'enfant">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="lastName" class="col-sm-2 col-form-label col-form-label-sm">Lieu de
+                                    naissance : <b class="text-danger">*</b></label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control form-control-sm" id="lastName" name="lastName"
+                                        placeholder="Le lieu de naissance">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row mb-3">
+                                        <label for="dateNais" class="col-sm-4 col-form-label col-form-label-sm">date de
+                                            naissance : <b class="text-danger">*</b></label>
+                                        <div class="col-sm-7">
+                                            <input type="date" class="form-control form-control-sm" id="dateNais" name="dateNais">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="row mb-3">
+                                        <label for="timeNais" class="col-sm-4 col-form-label col-form-label-sm">Heure
+                                            de
+                                            naissance : <b class="text-danger">*</b></label>
+                                        <div class="col-sm-7">
+                                            <input type="time" class="form-control form-control-sm" name="timeNais" id="timeNais">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexe"
+                                            id="genre1" value="option1">
+                                        <label class="form-check-label" for="genre1">Masculin</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="sexe"
+                                            id="genre2" value="option2">
+                                        <label class="form-check-label" for="genre2">Féminin</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <fieldset class="border rounded p-3">
+                                <legend class="float-none w-auto px-2"> Filiation :</legend>
+                                <div class="row mb-3">
+                                    <label for="firstName" class="col-sm-2 col-form-label col-form-label-sm">Nom de la Mère :
+                                        <b class="text-danger">*</b></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control form-control-sm" id="firstName"
+                                            placeholder="Le nom de la mère">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="firstName" class="col-sm-2 col-form-label col-form-label-sm">Prénoms de la Mère :
+                                        <b class="text-danger">*</b></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control form-control-sm" id="firstName"
+                                            placeholder="Le(s) prénoms de la mère">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="firstName" class="col-sm-2 col-form-label col-form-label-sm">Nom du père :
+                                        <b class="text-danger">*</b></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control form-control-sm" id="firstName"
+                                            placeholder="Le nom du père">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <label for="firstName" class="col-sm-2 col-form-label col-form-label-sm">prénom du père :
+                                        <b class="text-danger">*</b></label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control form-control-sm" id="firstName"
+                                            placeholder="Le(s) prénoms du père">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </fieldset>
+                        
+                    </form>
+                </div>
+                <div class="card-footer">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mt-5">
+        <div class="footer">
+            <p class="text">Copiryght | primsoft.technology</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
